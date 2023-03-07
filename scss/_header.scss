@@ -1,0 +1,110 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: $white-color;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    &-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    &-logo {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 5px;
+        span {
+            color: $primary-color;
+            font-size: 3em;
+            font-weight: 700;
+            max-width: 80px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-navbar {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 0 50px;
+    }
+    &-item {
+        position: relative;
+    }
+    &-link {
+        font-size: 1.8em;
+        font-weight: 500;
+        color: $black-color;
+        line-height: calc(22 / 18);
+        text-decoration: none;
+        padding-bottom: 5px;
+        transition: 0.3s linear;
+
+        &:hover {
+            border-bottom: 1px solid $primary-color;
+        }
+    }
+    &-link-active {
+        border-bottom: 1px solid $primary-color;
+    }
+    &-menu {
+        display: none;
+        i {
+            font-size: 2.5em;
+        }
+    }
+    .close {
+        display: none;
+        i {
+            font-size: 24px;
+            color: #fff;
+        }
+    }
+}
+@media screen and (max-width: 1023.98px) {
+    .header-main {
+        padding: 20px;
+    }
+    .header-navbar {
+        display: block;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding: 30px;
+        background-color: rgba(39, 40, 41, 0.8);
+        transform: translateX(-100%);
+        transition: 0.3s linear;
+        &.active {
+            transform: translateX(0);
+        }
+        .close {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .header-link {
+        display: block;
+        color: #fff;
+        margin-bottom: 26px;
+    }
+    .header-menu {
+        display: inline;
+        cursor: pointer;
+    }
+}

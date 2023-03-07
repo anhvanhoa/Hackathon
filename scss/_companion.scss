@@ -1,0 +1,23 @@
+.companion {
+    &-main {
+        padding: 80px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        //    border-bottom: 1px solid $boder-color;
+    }
+    &-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 70px;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        gap: 40px 75px;
+    }
+    &-img {
+        width: 180px;
+        height: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+.contact {
+     &-main {
+          padding: 80px 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+     }
+     &-body {
+          display: flex;
+          align-items: center;
+          margin-top: 46px;
+          justify-content: space-between;
+          gap: 0 50px;
+     }
+     &-img {
+          flex-shrink: 0;
+     }
+     &-form {
+          flex: 1;
+     }
+     .row {
+          display: flex;
+          gap: 0 32px;
+          margin-bottom: 28px;
+          .input {
+               display: flex;
+               flex-direction: column;
+               gap: 6px 0;
+          }
+          label {
+               font-size: 20px;
+               font-weight: 400;
+               color: $text-color;
+          }
+          input {
+               border: none;
+               outline: none;
+               background-color: #ECECEC;
+               border-radius: 5px;
+               width: 300px;
+               height: 48px;
+               padding: 0 10px;
+               color: #000;
+               font-size: 16px;
+          }
+     }
+     &-sub {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          label {
+               margin-bottom: 10px;
+               font-size: 20px;
+               font-weight: 400;
+               color: $text-color;
+          }
+
+          textarea {
+               resize: none;
+               padding: 8px;
+               font-size: 16px;
+               color: $primary-color;
+               background-color: #ECECEC;
+               border: none;
+               outline: none;
+               border-radius: 4px;
+          }
+     }
+     .btn {
+          margin-top: 20px;
+          padding: 12px 32px;
+          background-color: $primary-color;
+          color: #fff;
+          font-size: 1.6em;
+          border: none;
+          outline: none;
+          border-radius: 8px;
+          font-weight: 600;
+     }
+}
+@media screen and (max-width: 1023.98px) {
+     .contact-main {
+          padding: 40px 10px;
+     }
+     .contact-body {
+          flex-direction: column;
+     }
+}
+@media screen and (max-width: 767.98px) {
+     .contact-form {
+          width: 80%;
+     }
+     .contact .row {
+          flex-direction: column;
+          width: 100%;
+          gap: 20px 0;
+     }
+}
