@@ -8,15 +8,14 @@
         //    border-bottom: 1px solid $boder-color;
     }
     &-list {
-        margin-inline: 80px;
+        margin-inline: 50px;
         margin-top: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 330px;
-        grid-gap: 0 50px;
+        grid-template-rows: 360px;
+        grid-gap: 0 20px;
     }
     &-item {
-        width: 326px;
         padding: 30px;
         background-color: $white-color;
         box-shadow: 0px 60px 100px -10px rgba(35, 47, 70, 0.06);
@@ -26,6 +25,7 @@
         align-items: flex-start;
         justify-content: space-between;
         transition: 0.3s;
+        margin: 0 10px;
         &:hover {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
@@ -52,7 +52,7 @@
     }
     &-title {
         flex: 1;
-        font-size: 2.4em;
+        font-size: 2.2em;
         color: $text-heading;
         font-weight: 600;
         line-height: calc(36 / 24);
@@ -71,6 +71,7 @@
         padding: 50px 10px;
     }
     .service-list {
+        margin-inline: 0px;
         grid-template-columns: unset;
         grid-auto-flow: column;
         grid-auto-columns: 50%;
@@ -100,7 +101,8 @@
 }
 @media screen and (max-width: 767.98px) {
     .service-list {
-        padding: 50px;
-        margin-left: 480px;
+        // padding: 50px;
+        // margin-left: 480px;
+        grid-auto-columns: 60%;
     }
 }

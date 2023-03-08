@@ -71,9 +71,18 @@
 }
 @media screen and (max-width: 1023.98px) {
     .footer {
-        padding: 40px 10px;
+        padding: 30px 10px;
         grid-template-columns: 100%;
         gap: 30px;
+        &-title {
+            font-size: 1.5em;
+        }
+        &-link {
+            font-size: 1.2em;
+        }
+        &-copyright {
+            font-size: 1.5em;
+        }
     }
 }
 @media screen and (max-width: 768px) {

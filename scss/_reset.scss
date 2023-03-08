@@ -23,6 +23,6 @@ body::-webkit-scrollbar {
     height: 8px;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: $primary-color;
-    border-radius: 10px;
+    background-color: $primary-color-opacity;
+    // border-radius: 10px;
 }
