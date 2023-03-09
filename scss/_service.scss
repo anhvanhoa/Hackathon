@@ -7,33 +7,54 @@
         flex-direction: column;
         //    border-bottom: 1px solid $boder-color;
     }
+    // &-list {
+    //     margin-inline: 50px;
+    //     margin-top: 60px;
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+    //     grid-template-rows: 360px;
+    //     grid-gap: 0 20px;
+    // }
+    // &-item {
+    //     padding: 30px;
+    //     border-radius: 12px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: flex-start;
+    //     justify-content: space-between;
+    //     transition: 0.3s;
+    //     margin: 0 10px;
+    //     background-color: $white-color;
+    //     box-shadow: 0px 60px 100px -10px rgba(35, 47, 70, 0.06);
+    //     &:hover {
+    //         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    //     }
+    // }
     &-list {
-        margin-inline: 50px;
         margin-top: 60px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 360px;
-        grid-gap: 0 20px;
+        display: flex;
+        justify-content: space-between;
     }
     &-item {
+        transition: 0.3s;
+        margin: 0 10px;
+        height: 330px;
         padding: 30px;
-        background-color: $white-color;
-        box-shadow: 0px 60px 100px -10px rgba(35, 47, 70, 0.06);
-        border-radius: 12px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-between;
-        transition: 0.3s;
-        margin: 0 10px;
+        background-color: $white-color;
+        box-shadow: 0px 60px 100px -10px rgba(35, 47, 70, 0.06);
+        border-radius: 12px;
         &:hover {
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
     }
     &-img {
         flex-shrink: 0;
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         border-radius: 10px;
         svg {
@@ -68,41 +89,77 @@
 }
 @media screen and (max-width: 1023.98px) {
     .service-main {
-        padding: 50px 10px;
-    }
-    .service-list {
-        margin-inline: 0px;
-        grid-template-columns: unset;
-        grid-auto-flow: column;
-        grid-auto-columns: 50%;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-snap-type: x mandatory;
-        scroll-snap-stop: always;
-        padding: 25px;
-        scroll-padding: 25px;
-        grid-gap: 0 20px;
-    }
-    .service-list {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        padding: 40px 10px;
     }
     .service-list::-webkit-scrollbar {
         display: none;
     }
     .service-item {
-        scroll-snap-align: start;
-        padding: 36px 24px;
+        margin: 0 5px;
+        padding: 20px;
+        height: 270px;
+    }
+    .service-desc {
+        font-size: 1.4em;
     }
     .service-title {
-        font-size: 2em;
-        font-weight: 600;
+        font-size: 1.9em;
+    }
+    .service-img {
+        width: 80px;
+        height: 80px;
+        svg {
+            padding: 10px;
+        }
+        .icon-buy,
+        .icon-map {
+            padding: 17px;
+        }
     }
 }
 @media screen and (max-width: 767.98px) {
     .service-list {
-        // padding: 50px;
-        // margin-left: 480px;
-        grid-auto-columns: 60%;
+        margin-top: 40px;
+    }
+    .service-item {
+        padding: 15px;
+        height: 220px;
+    }
+    .service-img {
+        width: 60px;
+        height: 60px;
+        svg {
+            padding: 10px;
+        }
+        .icon-buy,
+        .icon-map {
+            padding: 17px;
+        }
+    }
+    .service-title {
+        font-size: 1.6em;
+    }
+    .service-desc {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .service-title {
+        font-size: 1.5em;
+    }
+    .service-item {
+        padding: 10px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .service-title {
+        font-size: 1.2em;
+    }
+    .service-item {
+        padding: 10px;
+        height: 220px;
     }
 }
