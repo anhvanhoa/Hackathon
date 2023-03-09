@@ -40,6 +40,9 @@
             margin-right: 5px;
             margin-bottom: 20px;
             cursor: pointer;
+            &:hover {
+                color: rgb(254, 215, 116);
+            }
         }
     }
     .social {

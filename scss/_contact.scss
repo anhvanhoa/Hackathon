@@ -86,6 +86,7 @@
     .contact-form,
     .contact-img {
         width: 100%;
+        margin-bottom: 30px;
     }
     .contact-main {
         padding: 40px 10px;
@@ -102,5 +103,20 @@
         flex-direction: column;
         width: 100%;
         gap: 20px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact .row {
+        label {
+            font-size: 1.5em;
+        }
+    }
+    .contact-sub label {
+        font-size: 1.5em;
+    }
+    .contact .btn {
+        font-size: 1.3em;
+        padding: 12px 18px;
     }
 }

@@ -3,7 +3,6 @@
     background: #f5f6f8;
     &-main {
         padding: 70px 10px;
-        //    border-bottom: 1px solid $boder-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,11 +87,11 @@
         margin-top: 50px;
         grid-template-columns: unset;
         grid-auto-flow: column;
-        grid-auto-columns: 80%;
+        grid-auto-columns: 50%;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         scroll-snap-stop: always;
-        padding: 45px;
+        padding: 45px 0;
         scroll-padding: 25px;
         grid-gap: 0 20px;
     }
@@ -105,5 +104,21 @@
     }
     .client-item {
         scroll-snap-align: start;
+    }
+}
+@media screen and (max-width: 600px) {
+    .client-list {
+        grid-auto-columns: 85%;
+    }
+    .client-item {
+        scroll-snap-align: start;
+        padding: 0;
+        left: 20px;
+    }
+    .client-name {
+        margin-top: 60px;
+    }
+    .client-bottom {
+        padding: 30px 10px;
     }
 }
