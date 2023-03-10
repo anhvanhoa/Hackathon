@@ -10,10 +10,11 @@
         margin-top: 80px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
     &-item {
         margin: 20px;
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 40px);
         padding: 20px;
         background-color: $white-color;
         border-radius: 8px;
