@@ -69,5 +69,14 @@
     .question-text {
         font-size: 1.2em;
         font-weight: 300;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+    }
+    .question-item:hover {
+        box-shadow: none;
     }
 }

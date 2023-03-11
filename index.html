@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <link rel="icon" href="./imgs/logo.png" type="image/x-icon" />
+        <link rel="icon" href="./imgs/Favicon.png" type="image/x-icon" />
         <title>My House - Mua nhà đã có chúng tôi !</title>
     </head>
     <body>
@@ -16,6 +16,7 @@
                     <div class="header-main">
                         <div class="header-logo">
                             <img src="./imgs/logo.png" alt="" />
+                            <span>My House</span>
                         </div>
                         <ul class="header-navbar">
                             <li class="header-item">
@@ -51,7 +52,7 @@
                     <div class="container">
                         <div class="banner-main">
                             <h1 class="banner-heading">NƠI HẠNH PHÚC NHẬP TRÀN</h1>
-                            <span class="banner-desc">Hạnh phúc là vun tròn tổ ấm trên khắp đất Việt</span>
+                            <!-- <span class="banner-desc">Hạnh phúc là vun tròn tổ ấm trên khắp đất Việt</span> -->
                         </div>
                     </div>
                 </section>
@@ -61,17 +62,12 @@
                         <div class="service-main">
                             <h1 class="heading-big">Dịch vụ tiện ích của chúng tôi</h1>
                             <span class="text-desc"
-                                >Take high quality online courses from the best online instrictors around the world &
-                                develop your skills.</span
+                                >Những căn nhà do chúng tôi cung cấp không chỉ đáp ứng về mặt thẩm mỹ mà còn phải đảm
+                                bảo tính thuận tiện cho khách hàng.</span
                             >
                             <div class="service-list">
                                 <div class="service-item">
                                     <div class="service-img">
-                                        <!-- huy -->
-
-                                        <!-- <img srcset="./imgs/service_icon_1.png" alt="" /> -->
-
-                                        <!-- AnhVanHoa -->
                                         <svg
                                             width="80"
                                             height="81"
@@ -129,14 +125,15 @@
                                             />
                                         </svg>
                                     </div>
-                                    <div class="sercvice-contetn">
-                                        <div class="service-title">Mua Căn Hộ Trực Tiếp</div>
-                                        <span class="service-desc">At first choose the place you wanted to go</span>
+                                    <div class="service-content">
+                                        <div class="service-title">Gần các nơi công cộng</div>
+                                        <span class="service-desc"
+                                            >Các căn nhà của chúng tôi đều gần các trường học, chợ và siêu thị</span
+                                        >
                                     </div>
                                 </div>
                                 <div class="service-item">
                                     <div class="service-img">
-                                        <!-- <img srcset="./imgs/service_icon_2.png 2x" alt="" /> -->
                                         <svg
                                             width="59"
                                             height="49"
@@ -180,14 +177,15 @@
                                             />
                                         </svg>
                                     </div>
-                                    <div class="sercvice-contetn">
-                                        <div class="service-title">Mua Căn Hộ Trực Tiếp</div>
-                                        <span class="service-desc">At first choose the place you wanted to go</span>
+                                    <div class="service-content">
+                                        <div class="service-title">Di chuyển nhanh chóng</div>
+                                        <span class="service-desc"
+                                            >Chỉ mất từ 15-30 phút đi xe để đến được sân bay</span
+                                        >
                                     </div>
                                 </div>
                                 <div class="service-item">
                                     <div class="service-img">
-                                        <!-- <img srcset="./imgs/service_icon_3.png 2x" alt="" /> -->
                                         <svg
                                             class="icon-buy"
                                             width="40"
@@ -237,9 +235,11 @@
                                             />
                                         </svg>
                                     </div>
-                                    <div class="sercvice-contetn">
-                                        <div class="service-title">Mua Căn Hộ Trực Tiếp</div>
-                                        <span class="service-desc">At first choose the place you wanted to go</span>
+                                    <div class="service-content">
+                                        <div class="service-title">Việc đi lại trở nên dễ dàng hơn</div>
+                                        <span class="service-desc"
+                                            >Gần các trục đường lớn, thuận tiện cho việc di chuyển</span
+                                        >
                                     </div>
                                 </div>
                             </div>
@@ -259,74 +259,146 @@
                                 <div class="product-item">
                                     <div class="product-info">Đang mở bán</div>
                                     <div class="product-img">
-                                        <img src="./imgs/product_1.png" alt="" />
+                                        <img src="./imgs/product-1.png" alt="" />
                                     </div>
-                                    <div class="product-name">Vinhomes Ocean Park</div>
+                                    <div class="product-name">Căn hộ gia đình</div>
                                     <div class="product-address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <span>Gia Lâm, Hà Nội</span>
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                        <span>Cầu giấy, Hà Nội</span>
                                     </div>
-                                    <div class="product-price">1 tỷ - 1,2 tỷ</div>
+                                    <div class="product-acreage">
+                                        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                                        <span>15m2</span>
+                                    </div>
+                                    <div class="product-room">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>2 phòng ngủ, 1 phòng khách</span>
+                                    </div>
+                                    <div class="product-desc">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                        <span>Phong các hiện đại, trang bị đầy đủ tiện ích</span>
+                                    </div>
+                                    <div class="product-price">1,1 tỷ - 1,5 tỷ</div>
                                 </div>
                                 <div class="product-item">
                                     <div class="product-info">Đang mở bán</div>
                                     <div class="product-img">
-                                        <img src="./imgs/product_1.png" alt="" />
+                                        <img src="./imgs/product-2.png" alt="" />
                                     </div>
-                                    <div class="product-name">Vinhomes Ocean Park</div>
+                                    <div class="product-name">Căn hộ gia đình</div>
                                     <div class="product-address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <span>Gia Lâm, Hà Nội</span>
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                        <span>Hà Đông, Hà Nội</span>
                                     </div>
-                                    <div class="product-price">1 tỷ - 1,2 tỷ</div>
+                                    <div class="product-acreage">
+                                        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                                        <span>15m2</span>
+                                    </div>
+                                    <div class="product-room">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>2 phòng ngủ, 1 phòng khách</span>
+                                    </div>
+                                    <div class="product-desc">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                        <span>Phong các hiện đại, trang bị đầy đủ tiện ích</span>
+                                    </div>
+                                    <div class="product-price">800 triệu - 1,2 tỷ</div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-info">Đang cho thuê</div>
+                                    <div class="product-img">
+                                        <img src="./imgs/product-3.png" alt="" />
+                                    </div>
+                                    <div class="product-name">Căn hộ gia đình</div>
+                                    <div class="product-address">
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                        <span>Nam Từ Liêm, Hà Nội</span>
+                                    </div>
+                                    <div class="product-acreage">
+                                        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                                        <span>15m2</span>
+                                    </div>
+                                    <div class="product-room">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>2 phòng ngủ, 1 phòng khách</span>
+                                    </div>
+                                    <div class="product-desc">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                        <span>Phong các hiện đại, trang bị đầy đủ tiện ích</span>
+                                    </div>
+                                    <div class="product-price">20 triệu / tháng</div>
                                 </div>
                                 <div class="product-item">
                                     <div class="product-info">Đang mở bán</div>
                                     <div class="product-img">
-                                        <img src="./imgs/product_1.png" alt="" />
+                                        <img src="./imgs/product-4.png" alt="" />
                                     </div>
-                                    <div class="product-name">Vinhomes Ocean Park</div>
+                                    <div class="product-name">Căn hộ gia đình</div>
                                     <div class="product-address">
-                                        <i class="fa-solid fa-location-dot"></i>
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                        <span>Long Biên, Hà Nội</span>
+                                    </div>
+                                    <div class="product-acreage">
+                                        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                                        <span>20m2</span>
+                                    </div>
+                                    <div class="product-room">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>2 phòng ngủ, 1 phòng khách</span>
+                                    </div>
+                                    <div class="product-desc">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                        <span>Phong các hiện đại, trang bị đầy đủ tiện ích</span>
+                                    </div>
+                                    <div class="product-price">900 triệu - 1,1 tỷ</div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-info">Đang cho thuê</div>
+                                    <div class="product-img">
+                                        <img src="./imgs/product-6.png" alt="" />
+                                    </div>
+                                    <div class="product-name">Căn hộ gia đình</div>
+                                    <div class="product-address">
+                                        <i class="fa-solid fa-map-location-dot"></i>
                                         <span>Gia Lâm, Hà Nội</span>
                                     </div>
-                                    <div class="product-price">1 tỷ - 1,2 tỷ</div>
+                                    <div class="product-acreage">
+                                        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                                        <span>15m2</span>
+                                    </div>
+                                    <div class="product-room">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>2 phòng ngủ, 1 phòng khách</span>
+                                    </div>
+                                    <div class="product-desc">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                        <span>Phong các hiện đại, trang bị đầy đủ tiện ích</span>
+                                    </div>
+                                    <div class="product-price">15 triệu / tháng</div>
                                 </div>
                                 <div class="product-item">
                                     <div class="product-info">Đang mở bán</div>
                                     <div class="product-img">
-                                        <img src="./imgs/product_2.png" alt="" />
+                                        <img src="./imgs/product-7.png" alt="" />
                                     </div>
-                                    <div class="product-name">Vinhomes Ocean Park</div>
+                                    <div class="product-name">Căn hộ gia đình</div>
                                     <div class="product-address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <span>Gia Lâm, Hà Nội</span>
+                                        <i class="fa-solid fa-map-location-dot"></i>
+                                        <span>Nhổn, Hà Nội</span>
                                     </div>
-                                    <div class="product-price">1 tỷ - 1,2 tỷ</div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="product-info">Đang mở bán</div>
-                                    <div class="product-img">
-                                        <img src="./imgs/product_3.png" alt="" />
+                                    <div class="product-acreage">
+                                        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+                                        <span>15m2</span>
                                     </div>
-                                    <div class="product-name">Vinhomes Ocean Park</div>
-                                    <div class="product-address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <span>Gia Lâm, Hà Nội</span>
+                                    <div class="product-room">
+                                        <i class="fa-solid fa-house"></i>
+                                        <span>2 phòng ngủ, 1 phòng khách</span>
                                     </div>
-                                    <div class="product-price">1 tỷ - 1,2 tỷ</div>
-                                </div>
-                                <div class="product-item">
-                                    <div class="product-info">Đang mở bán</div>
-                                    <div class="product-img">
-                                        <img src="./imgs/product_3.png" alt="" />
+                                    <div class="product-desc">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                        <span>Phong các hiện đại, trang bị đầy đủ tiện ích</span>
                                     </div>
-                                    <div class="product-name">Vinhomes Ocean Park</div>
-                                    <div class="product-address">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <span>Gia Lâm, Hà Nội</span>
-                                    </div>
-                                    <div class="product-price">1 tỷ - 1,2 tỷ</div>
+                                    <div class="product-price">1.5 tỷ - 2 tỷ</div>
                                 </div>
                             </div>
                         </div>
@@ -338,8 +410,8 @@
                         <div class="companion-main">
                             <h1 class="heading-big">Đồng hành cùng chúng tôi</h1>
                             <p class="text-desc">
-                                Danh sách các chủ đầu tư uy tín, nổi bật tại Việt Nam. Giới thiệu thông tin chi tiết chủ
-                                đầu tư, số lượng, thông tin các dự án được triển khai
+                                Bạn có thể yên tâm khi đồng hành với chúng tôi là những công ty lớn trong lĩnh vực bất
+                                động sản, luôn đem lại những lợi ích tốt nhất cho khách hàng.
                             </p>
                             <div class="companion-list">
                                 <div class="companion-img">
@@ -378,8 +450,8 @@
                                         <img src="./imgs/avt_img.avif" alt="" />
                                     </div>
                                     <div class="client-top">
-                                        <div class="client-name">Sayem Ahmed</div>
-                                        <div class="client-work">Product designer</div>
+                                        <div class="client-name">Nguyễn Quang Huy</div>
+                                        <div class="client-work">CEO</div>
                                     </div>
                                     <div class="client-bottom">
                                         <div class="star">
@@ -390,8 +462,8 @@
                                             <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="client-desc">
-                                            Before we define any approach, we need to define the brands' overall goal.
-                                            We then need to dive.
+                                            Tôi rất hài lòng về căn nhà My house đã giới thiệu cho tôi, nó có đầy đủ
+                                            những tiện nghi mà tôi mong muốn.
                                         </div>
                                     </div>
                                 </div>
@@ -400,8 +472,8 @@
                                         <img src="./imgs/avt_img.avif" alt="" />
                                     </div>
                                     <div class="client-top">
-                                        <div class="client-name">Sayem Ahmed</div>
-                                        <div class="client-work">Product designer</div>
+                                        <div class="client-name">Nguyễn Văn Đạt</div>
+                                        <div class="client-work">Nhân viên ngân hàng</div>
                                     </div>
                                     <div class="client-bottom">
                                         <div class="star">
@@ -412,8 +484,8 @@
                                             <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="client-desc">
-                                            Before we define any approach, we need to define the brands' overall goal.
-                                            We then need to dive.
+                                            Quy trình mua nhà rất ngắn gọn và đơn giản, nó đã giúp cho tôi tiết kiệm rất
+                                            nhiều thời gian.
                                         </div>
                                     </div>
                                 </div>
@@ -422,8 +494,8 @@
                                         <img src="./imgs/avt_img.avif" alt="" />
                                     </div>
                                     <div class="client-top">
-                                        <div class="client-name">Sayem Ahmed</div>
-                                        <div class="client-work">Product designer</div>
+                                        <div class="client-name">Lê Thị Thủy</div>
+                                        <div class="client-work">Quản lý cửa hàng</div>
                                     </div>
                                     <div class="client-bottom">
                                         <div class="star">
@@ -434,8 +506,8 @@
                                             <i class="fa-solid fa-star"></i>
                                         </div>
                                         <div class="client-desc">
-                                            Before we define any approach, we need to define the brands' overall goal.
-                                            We then need to dive.
+                                            Bộ phận khách hàng luôn biết lắng nghe ý kiến của khách hàng và phản hồi
+                                            trong thời gian sớm nhất.
                                         </div>
                                     </div>
                                 </div>
@@ -456,7 +528,7 @@
                                             <span>Giá cả hợp lí</span>
                                         </div>
                                         <p class="benefit-title">
-                                            My place cam kết với khách hàng giá mua căn hộ dịch vụ là tốt nhất
+                                            My home cam kết với khách hàng giá mua căn hộ dịch vụ là tốt nhất
                                         </p>
                                     </div>
                                     <div class="benefit-item">
@@ -482,10 +554,7 @@
                                     </div>
                                 </div>
                                 <div class="benefit-img">
-                                    <img
-                                        src="https://img.freepik.com/free-photo/hand-presenting-model-house-home-loan-campaign_53876-104970.jpg?w=996&t=st=1678390706~exp=1678391306~hmac=4c7733dd9b246f3a81e24fdaf395293b7973efbefc77a7c5d8d5066c3421d8e4"
-                                        alt=""
-                                    />
+                                    <img src="./imgs//img_new.avif" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -548,12 +617,25 @@
                                     </div>
                                     <div class="contact-sub">
                                         <label for="">Câu hỏi của bạn</label>
-                                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                                        <textarea
+                                            name=""
+                                            id=""
+                                            cols="30"
+                                            rows="10"
+                                            placeholder="Nhập câu hỏi của bạn..."
+                                        ></textarea>
                                     </div>
                                     <button class="btn">Gửi thông tin</button>
                                 </form>
                             </div>
                         </div>
+                    </div>
+                </section>
+                <section class="control">
+                    <div class="container">
+                        <button href="" class="control-back-to-top" title="Trở về đầu trang" onclick="scrollToTop()">
+                            <i class="fa-solid fa-rocket"></i>
+                        </button>
                     </div>
                 </section>
             </main>

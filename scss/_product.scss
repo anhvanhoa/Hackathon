@@ -1,19 +1,18 @@
 .product {
     background: #f5f6f8;
     &-main {
-        padding: 80px 0;
+        padding: 60px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     &-list {
-        margin-top: 80px;
+        margin-top: 60px;
         display: flex;
-        align-items: center;
         flex-wrap: wrap;
     }
     &-item {
-        margin: 20px;
+        margin: 15px;
         width: calc(100% / 3 - 40px);
         padding: 20px;
         background-color: $white-color;
@@ -45,6 +44,7 @@
         }
     }
     &-name {
+        margin-top: 30px;
         font-size: 1.2rem;
         font-weight: 600;
         line-height: calc(24 / 24);
@@ -54,6 +54,23 @@
     &-address {
         display: flex;
         align-items: center;
+        gap: 0 10px;
+        margin-bottom: 10px;
+        span {
+            font-size: 1.6em;
+            line-height: 1;
+            font-weight: 500;
+            color: #7c8291;
+        }
+        i {
+            font-size: 14px;
+            color: #7c8291;
+        }
+    }
+    &-acreage,
+    &-room {
+        margin-bottom: 10px;
+        display: flex;
         gap: 0 10px;
         span {
             font-size: 1.6em;
@@ -66,6 +83,21 @@
             color: #7c8291;
         }
     }
+    &-desc {
+        display: flex;
+        gap: 0 10px;
+        span {
+            font-size: 1.6em;
+            line-height: 1;
+            font-weight: 500;
+            color: #7c8291;
+        }
+        i {
+            font-size: 14px;
+            color: #7c8291;
+        }
+    }
+
     &-info {
         position: absolute;
         top: 26px;
@@ -82,8 +114,7 @@
     &-price {
         position: absolute;
         left: 10px;
-        bottom: 23%;
-        transform: translateY(23%);
+        top: 58%;
         padding: 10px 16px;
         color: #fff;
         font-size: 16px;
@@ -128,8 +159,7 @@
     }
     .product-price {
         left: 10px;
-        bottom: 18%;
-        transform: translateY(23%);
+        top: 65%;
     }
 }
 
@@ -139,8 +169,10 @@
     }
     .product-price {
         left: 10px;
-        bottom: 23%;
-        transform: translateY(23%);
+        top: 60%;
+    }
+    .product-list {
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 480px) {
@@ -148,29 +180,24 @@
         font-size: 1.8em;
         font-weight: 500;
     }
-    .product-price {
-        font-size: 1.4em;
-        transform: translateY(34%);
-        left: 8%;
-    }
+
     .product-info {
         font-size: 1.4em;
         padding: 6px 20px;
         left: 25px;
     }
     .product-main {
-        padding: 10px;
+        padding: 40px 10px;
     }
     .product-item {
         width: calc((100%));
-        margin: 0;
+        margin: 20px 0;
     }
     .product-img {
         height: 250px;
     }
     .product-price {
         left: 10px;
-        bottom: 28%;
-        transform: translateY(23%);
+        top: 53%;
     }
 }

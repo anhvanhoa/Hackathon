@@ -3,7 +3,6 @@
     &-main {
         padding: 70px 10px;
         display: flex;
-        // justify-content: center;
         align-items: center;
         flex-direction: column;
     }
@@ -73,20 +72,10 @@
         font-weight: 400;
         font-size: 1.5em;
         color: #646670;
-        width: 250px;
         line-height: 1.4;
     }
 }
 @media screen and (max-width: 1023.98px) {
-    // .client-list {
-    //     margin-top: 50px;
-    //     // grid-template-columns: unset;
-    //     // overflow-x: auto;
-    //     // scroll-snap-type: x mandatory;
-    //     // padding: 45px 0;
-    //     // grid-gap: 0 20px;
-    //     overflow: auto;
-    // }
     .client-list {
         scroll-padding: 25px;
         grid-auto-flow: column;
