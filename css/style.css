@@ -511,7 +511,7 @@ button:hover {
 }
 .product-item {
   margin: 15px;
-  width: calc(33.3333333333% - 40px);
+  width: calc(33.3333333333% - 30px);
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
