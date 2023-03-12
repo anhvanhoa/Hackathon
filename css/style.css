@@ -1092,6 +1092,7 @@ button:hover {
   .contact-form,
   .contact-img {
     width: 100%;
+    margin: 0 10px;
     margin-bottom: 30px;
   }
   .contact-main {
