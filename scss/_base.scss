@@ -4,17 +4,18 @@ body {
     font-size: 62.5%;
     line-height: 1;
     color: $text-color;
-    overflow-x: overflow;
+    // overflow-x: overflow;
     scroll-behavior: smooth;
 }
+
 .wrapper {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
 }
 .container {
-    // max-width: 1280px;
-    // width: 100%;
+    max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 .heading-big {

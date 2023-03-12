@@ -37,7 +37,6 @@ body {
   font-size: 62.5%;
   line-height: 1;
   color: #5C6272;
-  overflow-x: overflow;
   scroll-behavior: smooth;
 }
 
@@ -48,6 +47,8 @@ body {
 }
 
 .container {
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
