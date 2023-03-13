@@ -16,7 +16,7 @@ closeBtn.addEventListener('click', function () {
 // Back to top
 window.onscroll = function () {
     navbar.classList.remove('active');
-    if (window.scrollY > 1000) {
+    if (window.scrollY > 400) {
         controlBackToTop.classList.add('show');
     } else {
         controlBackToTop.classList.remove('show');
@@ -61,7 +61,7 @@ function activeMenu() {
     partOfWeb.forEach((ele, index) => {
         if (
             window.scrollY + header.offsetHeight >= ele.offsetTop &&
-            window.scrollY + header.offsetHeight <= ele.offsetTop + ele.offsetHeight * 0.7
+            window.scrollY + header.offsetHeight <= ele.offsetTop + ele.offsetHeight * 0.65
         ) {
             items[index].style.setProperty('--background-beforeElement', '100%');
         } else {
