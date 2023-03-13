@@ -61,7 +61,7 @@ function activeMenu() {
     partOfWeb.forEach((ele, index) => {
         if (
             window.scrollY + header.offsetHeight >= ele.offsetTop &&
-            window.scrollY + header.offsetHeight <= ele.offsetTop + ele.offsetHeight
+            window.scrollY + header.offsetHeight <= ele.offsetTop + ele.offsetHeight * 0.7
         ) {
             items[index].style.setProperty('--background-beforeElement', '100%');
         } else {
