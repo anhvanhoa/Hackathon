@@ -159,6 +159,7 @@ button:hover {
   margin: 0 20px;
 }
 .header-link {
+  position: relative;
   font-size: 1.8em;
   font-weight: 500;
   color: #000;
@@ -167,8 +168,19 @@ button:hover {
   padding-bottom: 5px;
   transition: 0.3s linear;
 }
-.header-link:hover {
-  border-bottom: 1px solid #284b63;
+.header-link::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: var(--background-beforeElement, 0);
+  border-radius: 5px;
+  background-color: black;
+  bottom: 0px;
+  left: 0;
+  transition: all 0.5s;
+}
+.header-link:hover::before {
+  width: 100%;
 }
 .header-link-active {
   border-bottom: 1px solid #284b63;
