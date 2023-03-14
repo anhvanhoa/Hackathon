@@ -119,6 +119,10 @@ button:hover {
   display: block;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -177,10 +181,10 @@ button:hover {
   bottom: 0px;
   left: 0;
   transition: all 0.5s;
+  background-color: #284b63;
 }
 .header-link:hover::before {
   width: 100%;
-  background-color: black;
 }
 .header-link-active {
   border-bottom: 1px solid #284b63;
